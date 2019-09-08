@@ -1,4 +1,3 @@
-
 import React from 'react';
 import FormGroup from '@material-ui/core/FormGroup';
 import FormControlLabel from '@material-ui/core/FormControlLabel';
@@ -9,8 +8,7 @@ const useStyles = makeStyles(theme => ({
   MuiFormGroup: {
     background: theme.palette.background.main,
     margin: "1em",
-    float: "left",
-    height: "100vh"
+    float: "left"
   }
 }));
 
