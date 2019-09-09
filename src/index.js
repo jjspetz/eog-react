@@ -9,7 +9,8 @@ import { gql } from "apollo-boost";
 const client = new ApolloClient({
   uri: 'https://react.eogresources.com/graphql',
 });
-
+console.log("client")
+console.log(client)
 client
   .query({
     query: gql`
@@ -19,7 +20,7 @@ client
     `
   })
   .then(result => {
-    ReactDOM.render(<App metric={result}/>, document.getElementById("root"));
+    ReactDOM.render(<App client={client} metric={result}/>, document.getElementById("root"));
   });
 
 // If you want your app to work offline and load faster, you can change
